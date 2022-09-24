@@ -4,6 +4,7 @@ import CardImage2 from '../images/card-images/card-image-2.jpeg';
 import CardImage3 from '../images/card-images/card-image-3.jpeg';
 import CardImage4 from '../images/card-images/card-image-4.jpeg';
 
+import image1 from '../images/slideshow/slideshow-2.jpeg'
 import {
   InfoSection,
   InfoGrid,
@@ -24,13 +25,13 @@ export default function Info() {
         <Card>
           <CardTitle>Fire Prevention Service - New York</CardTitle>
           <CardSubtitle>Fire Protection Service of Long Island</CardSubtitle>
-          <Image src={CardImage1} alt="" />
+          <Image src={image1} alt="" />
         </Card>
 
         <Card>
           <CardTitle>Exhaust Hood & Fire Suppression Systems</CardTitle>
           <CardSubtitle></CardSubtitle>
-          <Image src={CardImage3} alt="" />
+          <Image src={image1} alt="" />
         </Card>
 
         <Card>
@@ -67,7 +68,7 @@ export default function Info() {
             variety of fire extinguishing equipment we provide complete service
             for all municipal, commercial, marine, and residential applications.
           </CardDescription>
-          <Image src={CardImage2} alt="" />
+          <Image src={image1} alt="" />
         </Card>
 
         <Card>
@@ -90,12 +91,12 @@ export default function Info() {
             of the art ventilation and fire prevention systems in and around the
             New York metropolitan region.
           </CardDescription>
-          <Image src={CardImage1} alt="" />
+          <Image src={image1} alt="" />
         </Card>
 
         <Card>
           <CardTitle>Fire Extinguisher Sales and Inspection Service</CardTitle>
-          <Image src={CardImage4} alt="" />
+          <Image src={image1} alt="" />
         </Card>
       </InfoGrid>
     </InfoSection>
