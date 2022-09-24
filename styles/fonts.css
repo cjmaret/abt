@@ -3,6 +3,6 @@
   font-family: 'Fjalla One';
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/fjalla-one-v13-latin-regular.eot'); /* IE9 Compat Modes */
-  src: local(''), url('../fonts/fjalla-one-regular.ttf') format('truetype'); /* Safari, Android, iOS */
+  src: local(''),
+    url('../vendor/fjalla/FjallaOne-Regular.ttf') format('truetype'); /* Safari, Android, iOS */
 }
