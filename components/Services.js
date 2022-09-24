@@ -41,7 +41,7 @@ export default function Services() {
                         card.text?.map((textItem, i) => (
                           <Text key={i}>{textItem}</Text>
                         ))}
-                      <TextList>
+                      <TextList mobileWidth={mobileWidth}>
                         {card.textListItems?.map((textListItem, i) => (
                           <TextListItem key={i}>
                             <span className="list-item-span">

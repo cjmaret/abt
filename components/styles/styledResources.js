@@ -99,14 +99,11 @@ export const InfoDescription = styled.p`
   margin-bottom: 25px;
 `;
 
-export const InfoLink = styled.a`
-  width: 50%;
+export const InfoLink = styled.button`
+  margin: 75px auto 50px auto;
   box-sizing: border-box;
   font-size: 35px;
   display: block;
-  padding: 5px;
-  line-height: 85px;
-  margin: 75px auto 50px auto;
   text-align: center;
   border: 3px solid #005;
   border-radius: 40px;
@@ -115,10 +112,22 @@ export const InfoLink = styled.a`
   transition: 0.4s ease;
   text-transform: uppercase;
   text-decoration: none;
+  padding: 15px 20px;
+  white-space: nowrap;
   &:hover {
     text-decoration: none;
     background-color: #005;
     color: white;
     cursor: pointer;
+  }
+  @media (max-width: 1080px) {
+    font-size: 4vw;
+  }
+  @media (max-width: 650px) {
+    margin: 50px auto;
+  }
+  @media(max-width: 520px) {
+    font-size: 5vw;
+    margin: 35px auto;
   }
 `;

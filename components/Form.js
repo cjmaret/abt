@@ -15,6 +15,7 @@ import {
   Option,
   SubmitButton,
 } from './styles/styledForm';
+import { contactInfo } from '../lib/contact-info';
 
 export default function Form({ handleInputChange }) {
   const initialInputState = {
@@ -26,6 +27,7 @@ export default function Form({ handleInputChange }) {
     description: '',
   };
   const [inputs, setInputs] = useState(initialInputState);
+  const { mainNumber } = contactInfo;
 
   function handleInputChange(e) {
     setInputs({
@@ -51,7 +53,7 @@ export default function Form({ handleInputChange }) {
     <FormComponent onSubmit={onSubmit}>
       <FormTitle>Get In Touch</FormTitle>
       <FormSubtitle>
-        Fill out the form or call ###-###-#### to request an estimate or more
+        Fill out the form or call {mainNumber} to request an estimate or more
         information. We look forward to assisting you!
       </FormSubtitle>
 

@@ -3,7 +3,6 @@ import { useContext } from 'react';
 import AnsulImage from '../images/footer/ansul.jpeg';
 import PyrochemImage from '../images/footer/pyrochem.jpeg';
 import { MobileContext } from '../contexts/mobileContext';
-
 import {
   FooterComponent,
   Title,
@@ -19,9 +18,11 @@ import {
   AddressGroup,
   NumberGroup,
 } from './styles/styledFooter';
+import { contactInfo } from '../lib/contact-info';
 
 export default function Footer() {
   const isMobileWidth = useContext(MobileContext);
+  const { fullAddress, mainNumber, faxNumber, textNumber, email } = contactInfo;
 
   return (
     <FooterComponent>
@@ -36,12 +37,13 @@ export default function Footer() {
         <Info isMobileWidth={isMobileWidth}>
           <AddressGroup>
             <Company>ABT Design & Fire Protection</Company>
-            <Address>1724 Church St, Holbrook, NY 11741</Address>
+            <Address>{fullAddress}</Address>
           </AddressGroup>
           <NumberGroup>
-            <Number>Mobile/Text: ###-###-####</Number>
-            <Number>Long Island: ###-###-####</Number>
-            <Number>New Jersey: ###-###-####</Number>
+            <Number>Phone: {mainNumber}</Number>
+            <Number>Fax: {faxNumber}</Number>
+            <Number>Text: {textNumber}</Number>
+            <Number>Email: {email}</Number>
           </NumberGroup>
         </Info>
         {!isMobileWidth && (

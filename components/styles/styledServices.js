@@ -188,7 +188,7 @@ export const CardTitle = styled.h3`
 export const TextList = styled.ul`
   columns: 2;
   column-width: auto;
-  color: white;
+  color: ${(props) => (props.mobileWidth ? 'white' : 'black')};
   list-style-position: inside;
   padding: 0;
 `;
