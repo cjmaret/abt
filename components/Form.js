@@ -17,14 +17,15 @@ import {
 } from './styles/styledForm';
 
 export default function Form({ handleInputChange }) {
-  const [inputs, setInputs] = useState({
-    subject: 'accounts-receivable',
-    name: 'Colin',
-    company: 'Freelance',
-    email: 'cjmaret@gmail.com',
-    phone: '9',
-    description: 'Halp',
-  });
+  const initialInputState = {
+    subject: '',
+    name: '',
+    company: '',
+    email: '',
+    phone: '',
+    description: '',
+  };
+  const [inputs, setInputs] = useState(initialInputState);
 
   function handleInputChange(e) {
     setInputs({
@@ -32,7 +33,6 @@ export default function Form({ handleInputChange }) {
       [e.target.name]: e.target.value,
     });
   }
-  console.log(inputs);
 
   function onSubmit(e) {
     e.preventDefault();
@@ -40,6 +40,7 @@ export default function Form({ handleInputChange }) {
       .send('service_05ri4hs', 'template_45ftnjs', inputs, 'cW0sGTEjoOiTjuEa5')
       .then((response) => {
         console.log('SUCCESS!', response.status, response.text);
+        setInputs(initialInputState);
       })
       .catch((err) => {
         console.log('FAILED...', err);
