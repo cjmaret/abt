@@ -51,6 +51,9 @@ export const HeroImageWrapper = styled.div`
     object-fit: cover;
     display: block;
   }
+  @media (max-width: 700px) {
+    height: 40vh;
+  }
 `;
 
 export const HeroImageFade = styled.div`

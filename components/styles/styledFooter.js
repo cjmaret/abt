@@ -39,7 +39,6 @@ export const Details = styled.div`
   width: 95%;
   margin: auto;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   margin: 15px 0;
 `;
@@ -61,6 +60,7 @@ const mobileInfo = `
 export const Info = styled(Item)`
   text-align: center;
   font-size: 20px;
+  min-width: 50%;
   ${(props) =>
     props.isMobileWidth
       ? css`
@@ -70,38 +70,29 @@ export const Info = styled(Item)`
 `;
 
 export const ImageWrapper = styled(Item)`
-  width: 500px;
-  min-width: 30%;
+  width: 20%;
   display: flex;
   justify-content: center;
 `;
 
-export const AddressGroup = styled.div`
-  font-size: 15px;
+export const TextGroup = styled.div`
+  font-size: 18px;
   @media (max-width: 600px) {
     width: 50%;
-    font-size: 12px;
+    font-size: 15px;
   }
 `;
 
-export const NumberGroup = styled.div`
-  font-size: 15px;
-  @media (max-width: 600px) {
-    width: 50%;
-    font-size: 12px;
+export const Text = styled.p`
+  margin: 0;
+`;
+
+export const FooterLink = styled.a`
+  text-decoration: none;
+  color: white;
+  &:hover {
+    cursor: pointer;
   }
-`;
-
-export const Company = styled.p`
-  margin: 0;
-`;
-
-export const Address = styled.p`
-  margin: 0;
-`;
-
-export const Number = styled.p`
-  margin: 0;
 `;
 
 export const GoogleFrame = styled.iframe`

@@ -17,8 +17,12 @@ import {
   Colin,
   AddressGroup,
   NumberGroup,
+  Text,
+  TextGroup,
+  FooterLink,
 } from './styles/styledFooter';
 import { contactInfo } from '../lib/contact-info';
+import Link from 'next/link';
 
 export default function Footer() {
   const isMobileWidth = useContext(MobileContext);
@@ -35,16 +39,21 @@ export default function Footer() {
           </ImageWrapper>
         )}
         <Info isMobileWidth={isMobileWidth}>
-          <AddressGroup>
-            <Company>ABT Design & Fire Protection</Company>
-            <Address>{fullAddress}</Address>
-          </AddressGroup>
-          <NumberGroup>
-            <Number>Phone: {mainNumber}</Number>
-            <Number>Fax: {faxNumber}</Number>
-            <Number>Text: {textNumber}</Number>
-            <Number>Email: {email}</Number>
-          </NumberGroup>
+          <TextGroup>
+            <Text>ABT Design & Fire Protection</Text>
+            <Text>{fullAddress}</Text>
+          </TextGroup>
+          <TextGroup>
+            <Text>Phone: {mainNumber}</Text>
+            <Text>Fax: {faxNumber}</Text>
+            <Text>Text: {textNumber}</Text>
+            <Text>
+              Email:{' '}
+              <Link href="/contact">
+                <FooterLink>{email}</FooterLink>
+              </Link>
+            </Text>
+          </TextGroup>
         </Info>
         {!isMobileWidth && (
           <ImageWrapper>

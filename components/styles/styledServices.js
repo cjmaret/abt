@@ -213,6 +213,6 @@ export const Text = styled.p`
   text-align: left;
   line-height: 1.3;
   @media (max-width: 500px) {
-    margin: 10px 0 0 0;
+    margin: 10px 0;
   }
 `;

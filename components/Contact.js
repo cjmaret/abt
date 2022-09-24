@@ -20,7 +20,7 @@ export default function Contact() {
       <Lead data={contactLead} />
       <ContactFormGroup>
         <FormInfoContainer>
-          <FormGroupTitle>Contact Us</FormGroupTitle>
+          <FormGroupTitle>Information</FormGroupTitle>
           <FormGroupDescription>
             {companyName} - Corporate Office
           </FormGroupDescription>

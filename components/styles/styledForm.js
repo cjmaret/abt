@@ -9,6 +9,9 @@ export const FormComponent = styled.form`
   border-radius: 5px;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
   @media (max-width: 1000px) {
+    width: 90%;
+  }
+  @media (max-width: 400px) {
     width: 100%;
   }
 `;
@@ -30,7 +33,7 @@ export const FormSubtitle = styled.p`
   color: black;
   font-size: 20px;
   text-align: left;
-  width: 90%;
+  width: 85%;
   margin: auto;
   margin-bottom: 15px;
   line-height: 1.5;
