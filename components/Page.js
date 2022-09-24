@@ -4,25 +4,11 @@ import Header from './Header';
 import { MobileContext } from '../contexts/mobileContext';
 import { useEffect, useState } from 'react';
 import Footer from './Footer';
+import Head from 'next/head';
 
 const GlobalStyles = createGlobalStyle`
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
-/* fjalla-one-regular - latin */
-@font-face {
-  font-family: 'Fjalla One';
-  font-style: normal;
-  font-weight: 400;
-  src: url('../fonts/fjalla-one-v13-latin-regular.eot'); /* IE9 Compat Modes */
-  src: local(''),
-       url('../fonts/fjalla-one-v13-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/fjalla-one-v13-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/fjalla-one-v13-latin-regular.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/fjalla-one-v13-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/fjalla-one-v13-latin-regular.svg#FjallaOne') format('svg'); /* Legacy iOS */
-}
 
   :root {
     --blue: #005;
