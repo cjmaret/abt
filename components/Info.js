@@ -85,7 +85,7 @@ export default function Info() {
           <CardDescription>
             We design & develop commercial cooking areas and provide rapid sheet
             metal manufacturing options across the New York region. Located in
-            Long Island, NY (11706) ABT Design & Fire Protection is a leader in
+            Long Island, NY (11741) ABT Design & Fire Protection is a leader in
             fire prevention and mechanical fabrication company. Our services
             extend to design, fabrication and complete installation with state
             of the art ventilation and fire prevention systems in and around the
