@@ -37,7 +37,7 @@ export default function Form({ handleInputChange }) {
   function onSubmit(e) {
     e.preventDefault();
     emailjs
-      .send('service_rrhc91b', 'template_45ftnjs', inputs, 'cW0sGTEjoOiTjuEa5')
+      .send('service_05ri4hs', 'template_45ftnjs', inputs, 'cW0sGTEjoOiTjuEa5')
       .then((response) => {
         console.log('SUCCESS!', response.status, response.text);
       })

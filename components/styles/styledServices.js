@@ -8,30 +8,6 @@ export const ServicesComponent = styled.section`
   align-items: center;
 `;
 
-export const Lead = styled.div`
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url('/services-2.jpeg');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100vw;
-  text-align: center;
-  color: white;
-  padding: 100px 0;
-`;
-
-export const Title = styled.h1`
-  font-size: 80px;
-`;
-
-export const Subtitle = styled.p`
-  margin: auto;
-  font-size: 40px;
-  width: 90%;
-  line-height: 1.5;
-  letter-spacing: 1.5px;
-`;
-
 export const Grid = styled.article`
   display: grid;
   grid-template-columns: ${(props) =>
