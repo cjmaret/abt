@@ -43,6 +43,7 @@ export const MobileDetails = styled.div`
 export const MobileTitle = styled.h3`
   font-size: 4vw;
   margin: 0;
+  text-align: center;
 `;
 
 export const MobileDescription = styled.div`

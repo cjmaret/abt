@@ -56,6 +56,9 @@ export const InfoGroup = styled.div`
   width: 80%;
   margin: auto;
   margin-top: 95px;
+  @media (max-width: 500px) {
+    margin-top: 55px;
+  }
 `;
 
 export const InfoTitleGroup = styled.div`
@@ -68,12 +71,18 @@ export const InfoTitle = styled.h2`
   text-align: center;
   margin: 0;
   line-height: 1.5;
+  @media (max-width: 500px) {
+    font-size: 40px;
+  }
 `;
 
 export const InfoSubtitle = styled.p`
   font-size: 35px;
   text-align: center;
   margin: 0 0 10px 0;
+  @media (max-width: 500px) {
+    font-size: 25px;
+  }
 `;
 
 export const ExtinguisherClass = styled.div``;
@@ -81,12 +90,18 @@ export const ExtinguisherClass = styled.div``;
 export const ExtinguisherClassTitle = styled.p`
   font-size: 35px;
   margin: 0 0 0 0;
+  @media (max-width: 500px) {
+    font-size: 25px;
+  }
 `;
 
 export const ExtinguisherClassDescription = styled.p`
   font-size: 25px;
   font-family: 'Lato', sans-serif;
   margin: 0 0 35px 0;
+  @media (max-width: 500px) {
+    font-size: 20px;
+  }
 `;
 
 export const InfoDescription = styled.p`
@@ -97,6 +112,9 @@ export const InfoDescription = styled.p`
   width: 95%;
   margin: auto;
   margin-bottom: 25px;
+  @media (max-width: 500px) {
+    font-size: 20px;
+  }
 `;
 
 export const InfoLink = styled.button`
