@@ -70,16 +70,17 @@ export default function Resources() {
         <ExtinguisherClass>
           <ExtinguisherClassTitle>Class A</ExtinguisherClassTitle>
           <ExtinguisherClassDescription>
-            A fire extinguisher labeled with letter "A" is for use on Class A
-            fires. Class A fires are fires that involve ordinary combustible
-            materials such as cloth, wood, paper, rubber, and many plastics.
+            A fire extinguisher labeled with letter &quot;A&quot; is for use on
+            Class A fires. Class A fires are fires that involve ordinary
+            combustible materials such as cloth, wood, paper, rubber, and many
+            plastics.
           </ExtinguisherClassDescription>
         </ExtinguisherClass>
         <ExtinguisherClass>
           <ExtinguisherClassTitle>Class B</ExtinguisherClassTitle>
           <ExtinguisherClassDescription>
-            A fire extinguisher labeled with letter "B" is for use on Class B
-            fires. Class B fires are fires that involve flammable and
+            A fire extinguisher labeled with letter &quot;B&quot; is for use on
+            Class B fires. Class B fires are fires that involve flammable and
             combustible liquids such as gasoline, alcohol, diesel oil, oil-based
             paints, lacquers, etc., and flammable gases.
           </ExtinguisherClassDescription>
@@ -87,25 +88,25 @@ export default function Resources() {
         <ExtinguisherClass>
           <ExtinguisherClassTitle>Class C</ExtinguisherClassTitle>
           <ExtinguisherClassDescription>
-            A fire extinguisher labeled with letter "C" is for use on Class C
-            fires. Class C fires are fires that involve energized electrical
-            equipment.
+            A fire extinguisher labeled with letter &quot;C&quot; is for use on
+            Class C fires. Class C fires are fires that involve energized
+            electrical equipment.
           </ExtinguisherClassDescription>
         </ExtinguisherClass>
         <ExtinguisherClass>
           <ExtinguisherClassTitle>Class D</ExtinguisherClassTitle>
           <ExtinguisherClassDescription>
-            A fire extinguisher labeled with letter "D" is for use on Class D
-            fires. Class D fires are fires that involve combustible metals such
-            as magnesium, titanium and sodium.
+            A fire extinguisher labeled with letter &quot;D&quot; is for use on
+            Class D fires. Class D fires are fires that involve combustible
+            metals such as magnesium, titanium and sodium.
           </ExtinguisherClassDescription>
         </ExtinguisherClass>
         <ExtinguisherClass>
           <ExtinguisherClassTitle>Class K</ExtinguisherClassTitle>
           <ExtinguisherClassDescription>
-            A fire extinguisher labeled with letter "K" is for use on Class K
-            fires. Class K fires are fires that involve vegetable oils, animal
-            oils, or fats in cooking appliances. This is for commercial
+            A fire extinguisher labeled with letter &quot;K&quot; is for use on
+            Class K fires. Class K fires are fires that involve vegetable oils,
+            animal oils, or fats in cooking appliances. This is for commercial
             kitchens, including those found in restaurants, cafeterias, and
             caterers.
           </ExtinguisherClassDescription>
