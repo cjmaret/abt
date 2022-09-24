@@ -6,9 +6,15 @@ import { useEffect, useState } from 'react';
 import Footer from './Footer';
 
 const GlobalStyles = createGlobalStyle`
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+  :root {
+    --blue: #005;
+    --fullwidth: 100%;
+  }
 
   html {
-    --red: #A31621; /*#FE192F A31621 */
+    --red: #b00; 
     --black: #393939;
     --grey: #424B54;
     --lightGrey: #e1e1e1;
@@ -18,6 +24,7 @@ const GlobalStyles = createGlobalStyle`
     --bs: 0 12px 24px 0 rgba(0,0,0,0.09);
     box-sizing: border-box;
     font-size: 10px;
+    background-color: black;
   }
 
   *, *:before, *:after {
