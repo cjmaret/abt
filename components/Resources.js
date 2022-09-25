@@ -24,7 +24,7 @@ import FDNYImage from '../images/resources-useful-sites/fdny.png';
 import PyrochemImage from '../images/resources-useful-sites/pyrochem.jpeg';
 import NFPAImage from '../images/resources-useful-sites/nfpa.png';
 import Lead from './Lead';
-import { resourcesLead } from '../lib/lead-data';
+import { resourcesLead } from '../lib/data-arrays/lead-data';
 
 export default function Resources() {
   return (

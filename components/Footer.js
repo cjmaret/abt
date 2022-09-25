@@ -21,7 +21,7 @@ import {
   TextGroup,
   FooterLink,
 } from './styles/styledFooter';
-import { contactInfo } from '../lib/contact-info';
+import { contactInfo } from '../lib/data-arrays/contact-info';
 import Link from 'next/link';
 
 export default function Footer() {

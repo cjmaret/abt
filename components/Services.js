@@ -18,8 +18,8 @@ import {
 } from './styles/styledServices';
 import { MobileContext } from '../contexts/mobileContext';
 import Lead from './Lead';
-import { servicesLead } from '../lib/lead-data';
-import { servicesCardsArray } from '../lib/services-cards-data';
+import { servicesLead } from '../lib/data-arrays/lead-data';
+import { servicesCardsArray } from '../lib/data-arrays/services-cards-data';
 
 export default function Services() {
   const mobileWidth = useContext(MobileContext);

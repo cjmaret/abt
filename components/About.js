@@ -5,7 +5,7 @@ import {
   BusinessParagraph,
 } from './styles/styledAbout';
 import Lead from './Lead';
-import { aboutLead } from '../lib/lead-data';
+import { aboutLead } from '../lib/data-arrays/lead-data';
 
 export default function About() {
   return (

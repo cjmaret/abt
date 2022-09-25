@@ -15,48 +15,70 @@ import {
   InputTextarea,
   Option,
   SubmitButton,
+  FormSubmitResponse,
 } from './styles/styledForm';
-import { contactInfo } from '../lib/contact-info';
+import { contactInfo } from '../lib/data-arrays/contact-info';
+import validate from '../lib/data-arrays/validate';
+import FormErrors from './FormErrors';
 
-export default function Form({ handleInputChange }) {
+export default function Form() {
   const initialInputState = {
     subject: '',
     name: '',
     company: '',
     email: '',
     phone: '',
-    description: '',
+    message: '',
   };
   const [inputs, setInputs] = useState(initialInputState);
+  const [errorText, setErrorText] = useState({
+    nameError: '',
+    emailError: '',
+    messageError: '',
+  });
+  const [responseText, setResponseText] = useState('');
   const { mainNumber } = contactInfo;
 
   function handleInputChange(e) {
+    const field = e.target.name;
     setInputs({
       ...inputs,
-      [e.target.name]: e.target.value,
+      [field]: e.target.value,
     });
+    validate(e, errorText, setErrorText);
   }
 
   function onSubmit(e) {
     e.preventDefault();
     emailjs
-      .send('service_05ri4hs', 'template_45ftnjs', inputs, 'cW0sGTEjoOiTjuEa5')
+      .send('service_a0venhp', 'template_45ftnjs', inputs, 'cW0sGTEjoOiTjuEa5')
       .then((response) => {
         console.log('SUCCESS!', response.status, response.text);
         setInputs(initialInputState);
+        setResponseText('Thank you, staff at ABT will reply to you shortly');
       })
       .catch((err) => {
         console.log('FAILED...', err);
+        setResponseText(
+          'Sorry, there has been an error. Please try again later'
+        );
       });
   }
 
+  function isSubmitDisabled() {
+    return errorText.nameError || errorText.emailError || errorText.messageError
+      ? true
+      : false;
+  }
+
   return (
-    <FormComponent onSubmit={onSubmit}>
+    <FormComponent onSubmit={onSubmit} className="form">
       <FormTitle>Get In Touch</FormTitle>
       <FormSubtitle>
         Fill out the form or call {mainNumber} to request an estimate or more
         information. We look forward to assisting you!
       </FormSubtitle>
+      <FormSubmitResponse>{responseText}</FormSubmitResponse>
       <Fieldset>
         <InputGroup>
           <InputLabel htmlFor="subject">Subject: </InputLabel>
@@ -66,7 +88,7 @@ export default function Form({ handleInputChange }) {
             required
             onChange={handleInputChange}
             value={inputs.subject}>
-            <Option value>Subject*</Option>
+            <Option value>Subject</Option>
             <Option value="accounts-receivable">Accounts Receievable</Option>
             <Option value="accounts-payable">Accounts Payable</Option>
             <Option value="human-resources">Human Resources</Option>
@@ -80,7 +102,7 @@ export default function Form({ handleInputChange }) {
           </InputSelect>
         </InputGroup>
         <InputGroup>
-          <InputLabel htmlFor="name">Name:</InputLabel>
+          <InputLabel htmlFor="name">Name*:</InputLabel>
           <InputText
             type="text"
             name="name"
@@ -90,6 +112,9 @@ export default function Form({ handleInputChange }) {
             value={inputs.name}
             onChange={handleInputChange}
           />
+          {errorText.nameError && (
+            <FormErrors formError={errorText.nameError} />
+          )}
         </InputGroup>
         <InputGroup>
           <InputLabel htmlFor="company">Company:</InputLabel>
@@ -103,7 +128,7 @@ export default function Form({ handleInputChange }) {
           />
         </InputGroup>
         <InputGroup>
-          <InputLabel htmlFor="email">Email:</InputLabel>
+          <InputLabel htmlFor="email">Email*:</InputLabel>
           <InputText
             type="email"
             name="email"
@@ -113,6 +138,9 @@ export default function Form({ handleInputChange }) {
             onChange={handleInputChange}
             value={inputs.email}
           />
+          {errorText.emailError && (
+            <FormErrors formError={errorText.emailError} />
+          )}
         </InputGroup>
         <InputGroup>
           <InputLabel htmlFor="phone">Phone number:</InputLabel>
@@ -126,16 +154,21 @@ export default function Form({ handleInputChange }) {
           />
         </InputGroup>
         <InputGroup>
-          <InputLabel htmlFor="description">Description:</InputLabel>
+          <InputLabel htmlFor="message">Message*:</InputLabel>
           <InputTextarea
             type="textarea"
-            name="description"
-            id="description"
+            name="message"
+            id="message"
             placeholder="How Can We Help?"
             onChange={handleInputChange}
-            value={inputs.description}></InputTextarea>
+            value={inputs.message}></InputTextarea>
+          {errorText.messageError && (
+            <FormErrors formError={errorText.messageError} />
+          )}
         </InputGroup>
-        <SubmitButton type="submit">Submit</SubmitButton>
+        <SubmitButton type="submit" disabled={isSubmitDisabled()}>
+          Submit
+        </SubmitButton>
       </Fieldset>
     </FormComponent>
   );

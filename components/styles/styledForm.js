@@ -150,10 +150,21 @@ export const SubmitButton = styled.button`
   padding: 5px 50px;
   &:hover {
     opacity: 0.7;
+    cursor: ${(props) => (props.disabled ? 'auto' : 'pointer')};
   }
   @media (max-width: 500px) {
     font-size: 25px;
     margin-top: 10px;
     padding: 5px 25px;
   }
+  &:disabled {
+    background-color: grey;
+    opacity: 0.7;
+  }
+`;
+
+export const FormSubmitResponse = styled.div`
+  width: 100%;
+  text-align: center;
+  margin: 5px 0;
 `;

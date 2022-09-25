@@ -7,9 +7,9 @@ import {
   FormInfoContainer,
   GoogleMap,
 } from './styles/styledContact';
-import { contactLead } from '../lib/lead-data';
+import { contactLead } from '../lib/data-arrays/lead-data';
 import Form from './Form';
-import { contactInfo } from '../lib/contact-info';
+import { contactInfo } from '../lib/data-arrays/contact-info';
 
 export default function Contact() {
   const { companyName, streetAddress, townAddress, mainNumber, email } =
