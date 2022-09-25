@@ -1,6 +1,4 @@
 import Image from 'next/image';
-
-import image1 from '../images/slideshow/slideshow-2.jpeg';
 import SprinklerImage from '../images/info-images/sprinkler.jpeg';
 import ExtinguisherImage from '../images/info-images/extinguisher-check.jpeg';
 import ExtinguisherSystemImage from '../images/info-images/extinguisher-system.jpeg';
@@ -22,15 +20,19 @@ export default function Info() {
     <InfoSection>
       <InfoGrid>
         <Card>
-          <CardTitle>Exhaust Hood & Fire Suppression Systems</CardTitle>
-          <CardSubtitle></CardSubtitle>
+          <CardTitle>Fire Prevention Services of New York</CardTitle>
+          <CardDescription>
+            ABT Design & Fire Protection is a licensed and insured provider
+            headquartered in the Long Island, New York region. Distributing a
+            variety of fire extinguishing equipment we provide complete service
+            for all municipal, commercial, marine, and residential applications.
+          </CardDescription>
           <ImageWrapper>
-            <Image src={ExtinguisherImage} alt="" />
+            <Image src={SprinklerImage} alt="" />
           </ImageWrapper>
         </Card>
-
         <Card>
-          <CardTitle>New York Fire Prevention Services</CardTitle>
+          <CardTitle>Our Services</CardTitle>
           <ServiceList>
             <ServiceListItem>
               Mechanical Ventilation Hood Design
@@ -54,17 +56,11 @@ export default function Info() {
             </ServiceListItem>
           </ServiceList>
         </Card>
-
         <Card>
-          <CardTitle>Fire Prevention Services of New York</CardTitle>
-          <CardDescription>
-            ABT Design & Fire Protection is a licensed and insured provider
-            headquartered in the Long Island, New York region. Distributing a
-            variety of fire extinguishing equipment we provide complete service
-            for all municipal, commercial, marine, and residential applications.
-          </CardDescription>
+          <CardTitle>Exhaust Hood & Fire Suppression Systems</CardTitle>
+          <CardSubtitle></CardSubtitle>
           <ImageWrapper>
-            <Image src={SprinklerImage} alt="" />
+            <Image src={ExtinguisherImage} alt="" />
           </ImageWrapper>
         </Card>
         <Card>
