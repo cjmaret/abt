@@ -1,5 +1,6 @@
 import emailjs from '@emailjs/browser';
 import { useState } from 'react';
+import ReCAPTCHA from 'react-google-recaptcha';
 import {
   FormComponent,
   FormTitle,
@@ -56,7 +57,6 @@ export default function Form({ handleInputChange }) {
         Fill out the form or call {mainNumber} to request an estimate or more
         information. We look forward to assisting you!
       </FormSubtitle>
-
       <Fieldset>
         <InputGroup>
           <InputLabel htmlFor="subject">Subject: </InputLabel>
@@ -79,9 +79,6 @@ export default function Form({ handleInputChange }) {
             <Option value="request-service">Request Service</Option>
           </InputSelect>
         </InputGroup>
-
-        <InputCaptcha type="hidden" name="_captcha" value="false" />
-
         <InputGroup>
           <InputLabel htmlFor="name">Name:</InputLabel>
           <InputText
@@ -94,7 +91,6 @@ export default function Form({ handleInputChange }) {
             onChange={handleInputChange}
           />
         </InputGroup>
-
         <InputGroup>
           <InputLabel htmlFor="company">Company:</InputLabel>
           <InputText
@@ -106,7 +102,6 @@ export default function Form({ handleInputChange }) {
             value={inputs.company}
           />
         </InputGroup>
-
         <InputGroup>
           <InputLabel htmlFor="email">Email:</InputLabel>
           <InputText
@@ -119,7 +114,6 @@ export default function Form({ handleInputChange }) {
             value={inputs.email}
           />
         </InputGroup>
-
         <InputGroup>
           <InputLabel htmlFor="phone">Phone number:</InputLabel>
           <InputText
@@ -131,7 +125,6 @@ export default function Form({ handleInputChange }) {
             value={inputs.phone}
           />
         </InputGroup>
-
         <InputGroup>
           <InputLabel htmlFor="description">Description:</InputLabel>
           <InputTextarea
@@ -142,9 +135,7 @@ export default function Form({ handleInputChange }) {
             onChange={handleInputChange}
             value={inputs.description}></InputTextarea>
         </InputGroup>
-
-        <InputGoogleCaptcha data-sitekey="#########################"></InputGoogleCaptcha>
-
+        <ReCAPTCHA sitekey={process.env.NEXT_PUBLIC_GOOGLE_SITE_KEY} />
         <SubmitButton type="submit">Submit</SubmitButton>
       </Fieldset>
     </FormComponent>
