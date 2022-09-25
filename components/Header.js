@@ -11,7 +11,6 @@ import {
   NavListItem,
   NavLink,
   IconWrapper,
-  MobileNavLink,
   LogoWrapper,
 } from './styles/styledHeader';
 import CloseIcon from '../images/icons/close-icon.png';
@@ -59,8 +58,8 @@ export default function Header() {
   return (
     <HeaderComponent>
       <Logo>
-        <Link href="/" onClick={toggleMobileMenu}>
-          <LogoWrapper>
+        <Link href="/">
+          <LogoWrapper onClick={() => setIsMobileMenuOpen(false)}>
             <Image className="logo-image" alt="logo" src={LogoImage} />
           </LogoWrapper>
         </Link>

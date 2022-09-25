@@ -1,11 +1,5 @@
 import Image from 'next/image';
 import Link from 'next/link';
-
-import AnsulImage from '../images/resources-useful-sites/ansul.png';
-import BadgerImage from '../images/resources-useful-sites/badger.jpeg';
-import FDNYImage from '../images/resources-useful-sites/fdny.png';
-import PyrochemImage from '../images/resources-useful-sites/pyrochem.jpeg';
-import NFPAImage from '../images/resources-useful-sites/nfpa.png';
 import {
   ExtinguisherClass,
   ExtinguisherClassDescription,
@@ -24,6 +18,11 @@ import {
   UsefulLinkNFPA,
   UsefulLinkPyrochem,
 } from './styles/styledResources';
+import AnsulImage from '../images/resources-useful-sites/ansul.png';
+import BadgerImage from '../images/resources-useful-sites/badger.jpeg';
+import FDNYImage from '../images/resources-useful-sites/fdny.png';
+import PyrochemImage from '../images/resources-useful-sites/pyrochem.jpeg';
+import NFPAImage from '../images/resources-useful-sites/nfpa.png';
 import Lead from './Lead';
 import { resourcesLead } from '../lib/lead-data';
 

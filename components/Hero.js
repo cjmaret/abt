@@ -1,11 +1,8 @@
-import Image from 'next/image';
-import HeroImage from '../public/hero.jpeg';
 import {
   HeroComponent,
   HeroImageWrapper,
   HeroDetails,
   HeroTitle,
-  HeroImageFade,
   HeroDescription,
 } from './styles/styledHero';
 

@@ -1,4 +1,4 @@
-import { useContext, useState } from 'react';
+import { useContext } from 'react';
 import Image from 'next/image';
 import {
   CardContainer,
@@ -6,7 +6,6 @@ import {
   CardTitle,
   CardTitleOverlay,
   Grid,
-  ImageWrapper,
   MobileCard,
   MobileCardOverlay,
   MobileDescription,

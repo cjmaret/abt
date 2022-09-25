@@ -4,12 +4,8 @@ import Header from './Header';
 import { MobileContext } from '../contexts/mobileContext';
 import { useEffect, useState } from 'react';
 import Footer from './Footer';
-import Head from 'next/head';
 
 const GlobalStyles = createGlobalStyle`
-@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
-
-
   :root {
     --blue: #005;
     --fullwidth: 100%;
