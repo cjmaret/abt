@@ -135,7 +135,6 @@ export default function Form({ handleInputChange }) {
             onChange={handleInputChange}
             value={inputs.description}></InputTextarea>
         </InputGroup>
-        <ReCAPTCHA sitekey={process.env.NEXT_PUBLIC_GOOGLE_SITE_KEY} />
         <SubmitButton type="submit">Submit</SubmitButton>
       </Fieldset>
     </FormComponent>
