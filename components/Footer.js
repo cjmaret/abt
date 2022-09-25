@@ -1,7 +1,8 @@
 import Image from 'next/image';
 import { useContext } from 'react';
-import AnsulImage from '../images/footer/ansul.jpeg';
-import PyrochemImage from '../images/footer/pyrochem.jpeg';
+import BadgerImage from '../images/footer/badger.jpeg';
+import CaptiveaireImage from '../images/footer/captiveaire.jpeg';
+import CaptiveaireImage2 from '../images/footer/captiveaire-2.jpeg';
 import { MobileContext } from '../contexts/mobileContext';
 import {
   FooterComponent,
@@ -35,7 +36,7 @@ export default function Footer() {
       <Details>
         {!isMobileWidth && (
           <ImageWrapper>
-            <Image src={PyrochemImage} alt="" />
+            <Image src={BadgerImage} alt="" />
           </ImageWrapper>
         )}
         <Info isMobileWidth={isMobileWidth}>
@@ -57,7 +58,7 @@ export default function Footer() {
         </Info>
         {!isMobileWidth && (
           <ImageWrapper>
-            <Image src={AnsulImage} alt="" />
+            <Image src={CaptiveaireImage2} alt="" />
           </ImageWrapper>
         )}
       </Details>

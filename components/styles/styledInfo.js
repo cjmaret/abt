@@ -2,7 +2,8 @@ import styled from 'styled-components';
 
 export const InfoSection = styled.section`
   width: 100%;
-  margin: auto;
+  display: flex;
+  justify-content: center;
   z-index: 1;
   padding: 25px;
   .card-image {
@@ -14,17 +15,21 @@ export const InfoSection = styled.section`
 `;
 
 export const InfoGrid = styled.article`
+  width: 100%;
+  max-width: 1300px;
   display: grid;
+  justify-items: center;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
-  row-gap: 40px;
+  row-gap: 70px;
   column-gap: 70px;
   margin-top: 25px;
   @media (max-width: 1000px) {
-    grid-template-columns: repeat(2, 1fr);
     row-gap: 60px;
   }
-  @media (max-width: 700px) {
+  @media (max-width: 800px) {
+    grid-template-columns: repeat(1, 1fr);
+
     row-gap: 50px;
   }
   @media (max-width: 580px) {
@@ -37,6 +42,7 @@ export const Card = styled.div`
   flex-direction: column;
   align-items: center;
   margin-bottom: 20px;
+  max-width: 500px;
 `;
 
 export const CardTitle = styled.h2`
@@ -56,6 +62,10 @@ export const CardSubtitle = styled.p`
   @media (max-width: 700px) {
     font-size: 15px;
   }
+`;
+
+export const ImageWrapper = styled.div`
+  width: 100%;
 `;
 
 export const ServiceList = styled.ul`

@@ -39,14 +39,13 @@ export const Details = styled.div`
   width: 95%;
   margin: auto;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   margin: 15px 0;
 `;
 
-export const Item = styled.div`
+const Item = styled.div`
   margin: auto;
   padding-bottom: 0;
-  flex-basis: 200px;
 `;
 
 const mobileInfo = `
@@ -60,7 +59,7 @@ const mobileInfo = `
 export const Info = styled(Item)`
   text-align: center;
   font-size: 20px;
-  min-width: 50%;
+  min-width: 20%;
   ${(props) =>
     props.isMobileWidth
       ? css`
@@ -70,6 +69,7 @@ export const Info = styled(Item)`
 `;
 
 export const ImageWrapper = styled(Item)`
+  max-width: 250px;
   width: 20%;
   display: flex;
   justify-content: center;
