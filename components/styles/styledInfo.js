@@ -15,7 +15,7 @@ export const InfoSection = styled.section`
 
 export const InfoGrid = styled.article`
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
   row-gap: 40px;
   column-gap: 70px;

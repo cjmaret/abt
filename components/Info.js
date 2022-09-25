@@ -22,11 +22,11 @@ export default function Info() {
   return (
     <InfoSection>
       <InfoGrid>
-        <Card>
+        {/* <Card>
           <CardTitle>Fire Prevention Service - New York</CardTitle>
           <CardSubtitle>Fire Protection Service of Long Island</CardSubtitle>
           <Image src={image1} alt="" />
-        </Card>
+        </Card> */}
 
         <Card>
           <CardTitle>Exhaust Hood & Fire Suppression Systems</CardTitle>
@@ -71,7 +71,7 @@ export default function Info() {
           <Image src={image1} alt="" />
         </Card>
 
-        <Card>
+        {/* <Card>
           <CardTitle>New York Fire Protection</CardTitle>
           <CardSubtitle>
             Providing restaurant hood and fire prevention products to the
@@ -92,7 +92,7 @@ export default function Info() {
             New York metropolitan region.
           </CardDescription>
           <Image src={image1} alt="" />
-        </Card>
+        </Card> */}
 
         <Card>
           <CardTitle>Fire Extinguisher Sales and Inspection Service</CardTitle>

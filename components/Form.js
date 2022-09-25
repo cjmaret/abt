@@ -1,13 +1,10 @@
 import emailjs from '@emailjs/browser';
 import { useState } from 'react';
-import ReCAPTCHA from 'react-google-recaptcha';
 import {
   FormComponent,
   FormTitle,
   FormSubtitle,
   Fieldset,
-  InputCaptcha,
-  InputGoogleCaptcha,
   InputGroup,
   InputLabel,
   InputSelect,
