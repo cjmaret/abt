@@ -2,7 +2,8 @@ import Image from 'next/image';
 import { useContext } from 'react';
 import BadgerImage from '../images/footer/badger.jpeg';
 import CaptiveaireImage from '../images/footer/captiveaire.jpeg';
-import CaptiveaireImage2 from '../images/footer/captiveaire-2.jpeg';
+import PyrochemImage from '../images/footer/pyrochem.jpeg';
+import AnsulImage from '../images/footer/ansul.jpeg';
 import { MobileContext } from '../contexts/mobileContext';
 import {
   FooterComponent,
@@ -35,9 +36,14 @@ export default function Footer() {
       <Subtitle>Your Fire Protection Specialist</Subtitle>
       <Details>
         {!isMobileWidth && (
-          <ImageWrapper>
-            <Image src={BadgerImage} alt="" />
-          </ImageWrapper>
+          <>
+            <ImageWrapper className="first-image">
+              <Image src={AnsulImage} alt="" />
+            </ImageWrapper>
+            <ImageWrapper>
+              <Image src={BadgerImage} alt="" />
+            </ImageWrapper>
+          </>
         )}
         <Info isMobileWidth={isMobileWidth}>
           <TextGroup>
@@ -57,9 +63,14 @@ export default function Footer() {
           </TextGroup>
         </Info>
         {!isMobileWidth && (
-          <ImageWrapper>
-            <Image src={CaptiveaireImage2} alt="" />
-          </ImageWrapper>
+          <>
+            <ImageWrapper>
+              <Image src={CaptiveaireImage} alt="" />
+            </ImageWrapper>
+            <ImageWrapper className="first-image">
+              <Image src={PyrochemImage} alt="" />
+            </ImageWrapper>
+          </>
         )}
       </Details>
       <GoogleFrame

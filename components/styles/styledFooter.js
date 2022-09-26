@@ -73,6 +73,10 @@ export const ImageWrapper = styled(Item)`
   width: 20%;
   display: flex;
   justify-content: center;
+  margin-right: 10px;
+  .first-image {
+    border: 5px solid red;
+  }
 `;
 
 export const TextGroup = styled.div`

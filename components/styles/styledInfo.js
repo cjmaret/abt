@@ -66,6 +66,7 @@ export const CardSubtitle = styled.p`
 
 export const ImageWrapper = styled.div`
   width: 100%;
+
 `;
 
 export const ServiceList = styled.ul`
@@ -73,12 +74,15 @@ export const ServiceList = styled.ul`
   width: 100%;
   padding: 0;
   font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  @media (max-width: 500px) {
+    font-size: 16px;
+  }
 `;
 
 export const ServiceListItem = styled.li`
   margin-left: 10px;
   margin-bottom: 5px;
-  font-size: 17px;
   line-height: 1.5;
 `;
 

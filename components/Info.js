@@ -58,15 +58,15 @@ export default function Info() {
         </Card>
         <Card>
           <CardTitle>Exhaust Hood & Fire Suppression Systems</CardTitle>
-          <CardSubtitle></CardSubtitle>
+
           <ImageWrapper>
-            <Image src={ExtinguisherImage} alt="" />
+            <Image src={ExtinguisherSystemImage} alt="" />
           </ImageWrapper>
         </Card>
         <Card>
           <CardTitle>Fire Extinguisher Sales and Inspection Service</CardTitle>
           <ImageWrapper>
-            <Image src={ExtinguisherSystemImage} alt="" />
+            <Image src={ExtinguisherImage} alt="" />
           </ImageWrapper>
         </Card>
       </InfoGrid>
