@@ -34,27 +34,31 @@ export default function Resources() {
         <UsefulLinkAnsul
           href="https://www.ansul.com/en/us/pages/default.aspx"
           target="_blank">
-          <Image class="useful__img" src={AnsulImage} alt="ansul logo" />
+          <Image className="useful__img" src={AnsulImage} alt="ansul logo" />
         </UsefulLinkAnsul>
 
         <UsefulLinkBadger
           href="https://www.badgerfire.com/Pages/Home.aspx"
           target="_blank">
-          <Image class="useful__img" src={BadgerImage} alt="badger logo" />
+          <Image className="useful__img" src={BadgerImage} alt="badger logo" />
         </UsefulLinkBadger>
 
         <UsefulLinkFDNY
           href="http://www.nyc.gov/html/fdny/html/home2.shtml"
           target="_blank">
-          <Image class="useful__img" src={FDNYImage} alt="fdny logo" />
+          <Image className="useful__img" src={FDNYImage} alt="fdny logo" />
         </UsefulLinkFDNY>
 
         <UsefulLinkPyrochem href="http://www.pyrochem.com/" target="_blank">
-          <Image class="useful__img" src={PyrochemImage} alt="pyrochem logo" />
+          <Image
+            className="useful__img"
+            src={PyrochemImage}
+            alt="pyrochem logo"
+          />
         </UsefulLinkPyrochem>
 
         <UsefulLinkNFPA href="http://www.nfpa.org/" target="_blank">
-          <Image class="useful__img" src={NFPAImage} alt="nfpa logo" />
+          <Image className="useful__img" src={NFPAImage} alt="nfpa logo" />
         </UsefulLinkNFPA>
       </UsefulLinkGroup>
 
@@ -217,9 +221,7 @@ export default function Resources() {
         </InfoDescription>
       </InfoGroup>
 
-      <Link href="/contact">
-        <InfoLink>Contact us for a free price quote</InfoLink>
-      </Link>
+      <InfoLink href="/contact">Contact us for a free price quote</InfoLink>
     </ResourcesComponent>
   );
 }

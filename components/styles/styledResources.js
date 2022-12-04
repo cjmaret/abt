@@ -117,10 +117,12 @@ export const InfoDescription = styled.p`
   }
 `;
 
-export const InfoLink = styled.button`
+export const InfoLink = styled.a`
+  width: 85%;
+  max-width: 500px;
   margin: 75px auto 50px auto;
   box-sizing: border-box;
-  font-size: 35px;
+  font-size: 30px;
   display: block;
   text-align: center;
   border: 3px solid #005;
@@ -138,13 +140,10 @@ export const InfoLink = styled.button`
     color: white;
     cursor: pointer;
   }
-  @media (max-width: 1080px) {
-    font-size: 4vw;
-  }
   @media (max-width: 650px) {
     margin: 50px auto;
   }
-  @media(max-width: 520px) {
+  @media (max-width: 520px) {
     font-size: 5vw;
     margin: 35px auto;
   }
