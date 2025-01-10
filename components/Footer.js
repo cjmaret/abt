@@ -53,7 +53,7 @@ export default function Footer() {
           <TextGroup>
             <Text>Phone: {mainNumber}</Text>
             <Text>Fax: {faxNumber}</Text>
-            <Text>Text: {textNumber}</Text>
+            <Text>Text: {mainNumber}</Text>
             <Text>
               Email:{' '}
               <Link href="/contact">
